@@ -26,11 +26,11 @@ int main() {
 
     if (resposta && resposta->status == 200) {
         json resultado = json::parse(resposta->body);
-        std::cout << "✅ Resultado recebido do Mestre:\n";
+        std::cout << "Resultado recebido do Mestre:\n";
         std::cout << "Letras: " << resultado["letras"] << "\n";
         std::cout << "Números: " << resultado["numeros"] << "\n";
     } else {
-        std::cerr << "❌ Erro ao enviar requisição ao Mestre.\n";
+        std::cerr << "Erro ao enviar requisição ao Mestre.\n";
     }
 
     return 0;
